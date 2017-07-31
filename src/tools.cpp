@@ -59,7 +59,7 @@ MatrixXd Tools::CalculateJacobian(const VectorXd& x) {
   double c3 = c1 * c2;
 
   if (fabs(c1) < 0.0001) {
-    std::cout << "CaculateJacobian: Divide by zero" << std::endl;
+    std::cout << "CalculateJacobian: Divide by zero" << std::endl;
     return Hj;
   }
 
